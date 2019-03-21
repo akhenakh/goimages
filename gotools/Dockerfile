@@ -7,3 +7,9 @@ RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.s
 RUN GRPC_HEALTH_PROBE_VERSION=v0.2.1 && \
     wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \
     chmod +x /bin/grpc_health_probe
+
+RUN GRPC_GATEWAY_VERSION=v1.8.5 && \
+    wget -qo/bin/protoc-gen-grpc-gateway https://github.com/grpc-ecosystem/grpc-gateway/releases/download/${GRPC_GATEWAY_VERSION}/protoc-gen-grpc-gateway-${GRPC_GATEWAY_VERSION}-linux-x86_64 && \
+    chmod a+x /bin/protoc-gen-grpc-gateway && \
+    wget -qo/bin/protoc-gen-swagger https://github.com/grpc-ecosystem/grpc-gateway/releases/download/${GRPC_GATEWAY_VERSION}/protoc-gen-swagger-${GRPC_GATEWAY_VERSION}-linux-x86_64 && \
+    chmod a+x /bin/protoc-gen-swagger
