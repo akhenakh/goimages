@@ -22,5 +22,5 @@ if [[ "$1" == install ]]; then
   binpath=${gp#$PWD/}/bin
   echo "Binaries built using 'go install' will go to \"$binpath\"."
 fi
-echo "Running: go $@"
-go "$@"
+echo "Running command: $@"
+$@
