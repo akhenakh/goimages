@@ -9,7 +9,7 @@ RUN cd $GOPATH/src/github.com/mholt/caddy/caddy && go get . && go run build.go &
 FROM gcr.io/distroless/base
 WORKDIR /srv
 EXPOSE 80
-COPY --from=caddy_builder /go/src/github.com/mholt/caddy/caddy /bin/caddy
+COPY --from=caddy_builder /go/src/github.com/mholt/caddy/caddy/caddy /bin/caddy
 COPY Caddyfile /etc/Caddyfile
 COPY public /srv
 
