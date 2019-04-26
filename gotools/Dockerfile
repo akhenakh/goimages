@@ -22,6 +22,9 @@ RUN GRPC_GATEWAY_VERSION=v1.8.5 && \
     wget -qO/bin/protoc-gen-swagger https://github.com/grpc-ecosystem/grpc-gateway/releases/download/${GRPC_GATEWAY_VERSION}/protoc-gen-swagger-${GRPC_GATEWAY_VERSION}-linux-x86_64 && \
     chmod a+x /bin/protoc-gen-swagger
 
+RUN mkdir /builder
+
+COPY go_workspace.go prepare_workspace.inc /builder/
 
 COPY run.bash /bin/
 
