@@ -6,7 +6,6 @@ import (
 	// plug in plugins here, for example:
 	// _ "import/path/here"
 	_ "github.com/BTBurke/caddy-jwt"
-	_ "github.com/abiosoft/caddy-git"
 	_ "github.com/caddyserver/dnsproviders/cloudflare"
 	_ "github.com/caddyserver/dnsproviders/gandiv5"
 	_ "github.com/caddyserver/dnsproviders/godaddy"
