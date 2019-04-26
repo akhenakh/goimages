@@ -15,6 +15,7 @@ import (
 	_ "github.com/captncraig/cors"
 	_ "github.com/epicagency/caddy-expires"
 	_ "github.com/miekg/caddy-prometheus"
+	_ "github.com/nicolasazrak/caddy-cache"
 	_ "github.com/pieterlouw/caddy-grpc"
 	_ "github.com/pyed/ipfilter"
 	_ "github.com/tarent/loginsrv/caddy"

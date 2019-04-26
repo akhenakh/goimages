@@ -16,9 +16,11 @@ require (
 	github.com/mholt/caddy v1.0.0
 	github.com/miekg/caddy-prometheus v0.0.0-20190322143946-eb0f4d1615b0
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76 // indirect
+	github.com/nicolasazrak/caddy-cache v0.3.1
 	github.com/ovh/go-ovh v0.0.0-20181109152953-ba5adb4cf014 // indirect
 	github.com/pieterlouw/caddy-grpc v0.0.4
 	github.com/pkg/errors v0.8.1 // indirect
+	github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
 	github.com/prometheus/client_golang v0.9.2 // indirect
 	github.com/pyed/ipfilter v1.1.3
 	github.com/rs/cors v1.6.0 // indirect
