@@ -15,5 +15,5 @@ COPY --from=caddy_builder /go/bin/minigit /bin/git
 COPY --from=caddy_builder /workdir/hugo/hugo /bin/hugo
 COPY Caddyfile /etc/Caddyfile
 COPY public /public
-
+ENTRYPOINT ["/bin/caddy"]
 CMD ["/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout", "--agree=true"]
