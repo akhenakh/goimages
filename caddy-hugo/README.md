@@ -9,8 +9,7 @@ root /public
 git https://github.com/myuser/hugo-blog {
    path /data
    then  hugo --destination=/public  --cleanDestinationDir
-   clone_args --ghtoken XXXXXXXXXXXXX 
-   pull_args --ghtoken XXXXXXXXXXXXX 
+   tokem XXXXXXXXXXXXX 
    interval 30
 }
 ```

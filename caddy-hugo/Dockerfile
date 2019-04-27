@@ -7,8 +7,7 @@ WORKDIR /workdir
 RUN git clone https://github.com/gohugoio/hugo.git && cd hugo && git checkout tags/v0.55.4 && CGO_ENABLED=0 go build
 RUN CGO_ENABLED=0 go get github.com/akhenakh/minigit
 
-FROM alpine:latest
-RUN apk add --no-cache ca-certificates
+FROM gcr.io/distroless/base
 WORKDIR /srv
 EXPOSE 80 443
 COPY --from=caddy_builder /workdir/build/caddy /bin/caddy
