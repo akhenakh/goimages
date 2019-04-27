@@ -8,6 +8,7 @@ RUN git clone https://github.com/gohugoio/hugo.git && cd hugo && git checkout ta
 RUN CGO_ENABLED=0 go get github.com/akhenakh/minigit
 
 FROM alpine:latest
+RUN apk add --no-cache ca-certificates
 WORKDIR /srv
 EXPOSE 80 443
 COPY --from=caddy_builder /workdir/build/caddy /bin/caddy
