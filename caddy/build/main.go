@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/mholt/caddy/caddy/caddymain"
+	"github.com/akhenakh/caddy/caddy/caddymain"
 
 	// plug in plugins here, for example:
 	// _ "import/path/here"
 	_ "github.com/BTBurke/caddy-jwt"
-	_ "github.com/akhenakh/caddy-git"
+	_ "github.com/akhenakh/caddy-puregit"
 	_ "github.com/caddyserver/dnsproviders/cloudflare"
 	_ "github.com/caddyserver/dnsproviders/gandiv5"
 	_ "github.com/caddyserver/dnsproviders/godaddy"
@@ -26,6 +26,6 @@ import (
 
 func main() {
 	// optional: disable telemetry
-	// caddymain.EnableTelemetry = false
+	caddymain.EnableTelemetry = false
 	caddymain.Run()
 }
