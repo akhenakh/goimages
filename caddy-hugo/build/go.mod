@@ -2,20 +2,18 @@ module build
 
 go 1.12
 
-replace github.com/mholt/caddy => github.com/akhenakh/caddy v1.0.0
-
 require (
 	blitznote.com/src/caddy.upload v1.3.3 // indirect
 	github.com/BTBurke/caddy-jwt v3.7.0+incompatible
 	github.com/abbot/go-http-auth v0.4.0 // indirect
-	github.com/akhenakh/caddy v1.0.0
-	github.com/akhenakh/caddy-puregit v0.0.0-20190429022017-f41696ad5371
+	github.com/akhenakh/caddy-puregit v0.0.0-20190430132805-aebc9833aee0
 	github.com/caddyserver/dnsproviders v0.1.4
 	github.com/captncraig/cors v0.0.0-20190326022215-48080ede89fe
-	github.com/cloudflare/cloudflare-go v0.9.0 // indirect
+	github.com/cloudflare/cloudflare-go v0.9.1 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/epicagency/caddy-expires v1.1.0
 	github.com/improbable-eng/grpc-web v0.9.1 // indirect
+	github.com/mholt/caddy v1.0.0
 	github.com/miekg/caddy-prometheus v0.0.0-20190427182235-c6dd97357b72
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76 // indirect
 	github.com/nicolasazrak/caddy-cache v0.3.1
