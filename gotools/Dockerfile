@@ -1,4 +1,4 @@
-FROM golang:1.12
+FROM golang:1.12.7
 RUN apt-get update && apt-get install -y --no-install-recommends software-properties-common protobuf-compiler 
 RUN add-apt-repository ppa:masterminds/glide &&  apt-get install -y --no-install-recommends golang-glide 
 
@@ -6,7 +6,7 @@ RUN GIT_TAG="v1.2.0"  && go get -d -u github.com/golang/protobuf/protoc-gen-go &
     git -C "$(go env GOPATH)"/src/github.com/golang/protobuf checkout $GIT_TAG && \
     go install github.com/golang/protobuf/protoc-gen-go
 
-RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.15.0
+RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.17.1
 
 RUN GODEP_VERSION=v0.5.1 && \
     wget -qO/bin/dep https://github.com/golang/dep/releases/download/${GODEP_VERSION}/dep-linux-amd64 && \
