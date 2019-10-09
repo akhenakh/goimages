@@ -26,6 +26,8 @@ RUN go get github.com/google/wire/cmd/wire
 
 RUN go get github.com/vektra/mockery/.../
 
+RUN go get github.com/gobuffalo/packr/packr
+
 RUN mkdir /builder
 
 COPY go_workspace.go prepare_workspace.inc /builder/
