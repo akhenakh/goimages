@@ -1,4 +1,4 @@
-FROM golang:1.13
+FROM golang:1.13-stretch
 RUN apt-get update && apt-get install -y --no-install-recommends software-properties-common protobuf-compiler 
 RUN add-apt-repository ppa:masterminds/glide &&  apt-get install -y --no-install-recommends golang-glide 
 
