@@ -1,38 +1,53 @@
 module build
 
-go 1.12
+go 1.17
 
 require (
-	blitznote.com/src/caddy.upload v1.3.3 // indirect
-	github.com/BTBurke/caddy-jwt v3.7.0+incompatible
-	github.com/abbot/go-http-auth v0.4.0 // indirect
-	github.com/akhenakh/caddy-puregit v0.0.0-20190430132805-aebc9833aee0
-	github.com/caddyserver/dnsproviders v0.1.4
-	github.com/captncraig/cors v0.0.0-20190326022215-48080ede89fe
-	github.com/cloudflare/cloudflare-go v0.9.1 // indirect
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
-	github.com/epicagency/caddy-expires v1.1.0
-	github.com/improbable-eng/grpc-web v0.9.1 // indirect
-	github.com/mholt/caddy v1.0.0
-	github.com/miekg/caddy-prometheus v0.0.0-20190427182235-c6dd97357b72
-	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76 // indirect
-	github.com/nicolasazrak/caddy-cache v0.3.1
-	github.com/ovh/go-ovh v0.0.0-20181109152953-ba5adb4cf014 // indirect
-	github.com/pieterlouw/caddy-grpc v0.0.4
-	github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
-	github.com/prometheus/client_golang v0.9.2 // indirect
-	github.com/pyed/ipfilter v1.1.3
-	github.com/rs/cors v1.6.0 // indirect
-	github.com/tarent/lib-compose v0.0.0-20170829113806-69430f91d1d6 // indirect
-	github.com/tarent/loginsrv v1.3.0
-	github.com/tarent/logrus v0.11.5 // indirect
-	github.com/wmark/caddy.upload v1.3.3
-	github.com/xuqingfeng/caddy-rate-limit v1.6.0
-	github.com/zikes/gopkg v1.0.1
-	golang.org/x/oauth2 v0.0.0-20190402181905-9f3314589c9a // indirect
-	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4 // indirect
-	google.golang.org/api v0.4.0 // indirect
-	google.golang.org/grpc v1.20.1 // indirect
-	gopkg.in/ini.v1 v1.42.0 // indirect
-	plugin.hosting/go/abs v0.0.0-20160327140701-1ba06a13d0c0 // indirect
+	github.com/akhenakh/caddy-puregit v0.0.0-20191231135253-40c1f7acc8c2
+	github.com/caddyserver/caddy v1.0.5
+)
+
+require (
+	github.com/cenkalti/backoff/v3 v3.0.0 // indirect
+	github.com/cheekybits/genny v1.0.0 // indirect
+	github.com/dustin/go-humanize v1.0.0 // indirect
+	github.com/emirpasic/gods v1.9.0 // indirect
+	github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568 // indirect
+	github.com/go-acme/lego/v3 v3.2.0 // indirect
+	github.com/golang/protobuf v1.3.2 // indirect
+	github.com/google/uuid v1.1.1 // indirect
+	github.com/gorilla/websocket v1.4.0 // indirect
+	github.com/hashicorp/go-syslog v1.0.0 // indirect
+	github.com/hpcloud/tail v1.0.0 // indirect
+	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
+	github.com/jimstudt/http-authentication v0.0.0-20140401203705-3eca13d6893a // indirect
+	github.com/kevinburke/ssh_config v0.0.0-20180830205328-81db2a75821e // indirect
+	github.com/klauspost/cpuid v1.2.0 // indirect
+	github.com/lucas-clemente/quic-go v0.13.1 // indirect
+	github.com/marten-seemann/chacha20 v0.2.0 // indirect
+	github.com/marten-seemann/qpack v0.1.0 // indirect
+	github.com/marten-seemann/qtls v0.4.1 // indirect
+	github.com/mholt/certmagic v0.8.3 // indirect
+	github.com/miekg/dns v1.1.15 // indirect
+	github.com/mitchellh/go-homedir v1.1.0 // indirect
+	github.com/naoina/go-stringutil v0.1.0 // indirect
+	github.com/naoina/toml v0.1.1 // indirect
+	github.com/onsi/ginkgo v1.8.0 // indirect
+	github.com/pelletier/go-buffruneio v0.2.0 // indirect
+	github.com/russross/blackfriday v0.0.0-20170610170232-067529f716f4 // indirect
+	github.com/sergi/go-diff v1.0.0 // indirect
+	github.com/src-d/gcfg v1.4.0 // indirect
+	github.com/xanzy/ssh-agent v0.2.0 // indirect
+	golang.org/x/crypto v0.0.0-20190911031432-227b76d455e7 // indirect
+	golang.org/x/net v0.0.0-20191027093000-83d349e8ac1a // indirect
+	golang.org/x/sys v0.0.0-20191026070338-33540a1f6037 // indirect
+	golang.org/x/text v0.3.2 // indirect
+	gopkg.in/fsnotify.v1 v1.4.7 // indirect
+	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
+	gopkg.in/square/go-jose.v2 v2.3.1 // indirect
+	gopkg.in/src-d/go-billy.v4 v4.2.1 // indirect
+	gopkg.in/src-d/go-git.v4 v4.11.0 // indirect
+	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
+	gopkg.in/warnings.v0 v0.1.2 // indirect
+	gopkg.in/yaml.v2 v2.2.2 // indirect
 )
