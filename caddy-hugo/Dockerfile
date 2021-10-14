@@ -1,10 +1,10 @@
-FROM golang:1.12-alpine as caddy_builder
+FROM golang:1.17-alpine as caddy_builder
 RUN apk add --no-cache git gcc musl-dev
 RUN mkdir -p /workdir
 COPY build /workdir/build
 RUN cd /workdir/build && go mod vendor && CGO_ENABLED=0 go build -mod=vendor -o caddy
 WORKDIR /workdir
-RUN git clone https://github.com/gohugoio/hugo.git && cd hugo && git checkout tags/v0.58.1 && CGO_ENABLED=0 go build
+RUN git clone https://github.com/gohugoio/hugo.git && cd hugo && git checkout tags/v0.88.1 && CGO_ENABLED=0 go build
 
 FROM gcr.io/distroless/base
 WORKDIR /srv
