@@ -16,7 +16,7 @@ require (
 	github.com/go-acme/lego/v3 v3.2.0 // indirect
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/uuid v1.1.1 // indirect
-	github.com/gorilla/websocket v1.4.0 // indirect
+	github.com/gorilla/websocket v1.4.1 // indirect
 	github.com/hashicorp/go-syslog v1.0.0 // indirect
 	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
@@ -28,7 +28,7 @@ require (
 	github.com/marten-seemann/qpack v0.1.0 // indirect
 	github.com/marten-seemann/qtls v0.4.1 // indirect
 	github.com/mholt/certmagic v0.8.3 // indirect
-	github.com/miekg/dns v1.1.15 // indirect
+	github.com/miekg/dns v1.1.25 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/naoina/go-stringutil v0.1.0 // indirect
 	github.com/naoina/toml v0.1.1 // indirect
